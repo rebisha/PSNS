@@ -1,8 +1,8 @@
 <template>
   <div class="header" >
-    <img src="./assets/feature-1.jpg">
+    <img class="img-fluid" src="./assets/feature-1.jpg">
     <div class="header-logo">
-      <img src="./assets/logo1.png">
+      <img class="mt-2" src="./assets/logo1.png">&nbsp;
       <span> of </span>
       <br><br>
       <span>Sunshine North </span>
