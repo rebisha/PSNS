@@ -3,7 +3,7 @@
     <div class="col-lg-3">
       <a href="#" target="_blank">
         <img class="logo-img" src="./assets/logo1.png" width="20%">
-        <span> of Sunshine North </span>
+        <span class="font"> of Sunshine North </span>
       </a>
     </div>
 
@@ -30,7 +30,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-lg-2 offset-lg-1 enquiry">
+    <div class="col-lg-2 offset-lg-1 bg-yellow">
       <h4>Enquiry </h4>
     </div>
   </nav>
@@ -42,23 +42,13 @@
 <style lang="scss">
 #mainNav {
   background-color: #37392b;
-
-  .enquiry {
-    background-color: #ffc600;
-  }
 }
 
 .logo-img {
   padding-top: 5px;
 }
 
-a {
-  color: white !important;
-  text-decoration: none !important;
-}
-
 span {
-  font-family: Vollkorn, serif;
   font-size: 26px;
   vertical-align:top;
 }

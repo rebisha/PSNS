@@ -1,0 +1,37 @@
+.font {
+  font-family: $font;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+.text-black {
+  color: $black;
+}
+
+a {
+  color: $white !important;
+  text-decoration: none !important;
+}
+
+.bg-primary {
+  background-color: $bgColor !important;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.mt-6 {
+  margin-top: 5rem;
+}
+
+span.logo {
+  font-size: 80px;
+  color: $white;
+}
