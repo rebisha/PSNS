@@ -30,7 +30,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-lg-2 offset-lg-1 bg-yellow">
+    <div class="col-lg-2 bg-yellow">
       <h4>Enquiry </h4>
     </div>
   </nav>

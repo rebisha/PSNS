@@ -3,6 +3,7 @@
   <app-nav></app-nav>
   <app-header></app-header>
   <app-content-body></app-content-body>
+  <app-gallery-grid></app-gallery-grid>
   </div>
 </template>
 
