@@ -4,6 +4,8 @@
   <app-header></app-header>
   <app-content-body></app-content-body>
   <app-gallery-grid></app-gallery-grid>
+  <app-video></app-video>
+  <app-floorplan></app-floorplan>
   </div>
 </template>
 

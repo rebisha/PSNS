@@ -1,7 +1,7 @@
 <template>
   <header>
     <img class="img-fluid" src="./assets/feature-1.jpg">
-    <div class="header-logo">
+    <div class="header-logo text-center">
       <img class="mt-2" src="./assets/logo1.png">&nbsp;
       <span class="logo font"> of
       <br><br>
