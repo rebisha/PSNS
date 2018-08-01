@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="col-lg-3">
       <a href="#" target="_blank">
-        <img class="logo-img" src="./assets/logo1.png" width="20%">
+        <img class="logo-img" src="./assets/media/logo1.png" width="20%">
         <span class="font"> of Sunshine North </span>
       </a>
     </div>
@@ -16,16 +16,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#values">Our Values</a>
+            <a class="nav-link js-scroll-trigger" href="#values">The project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#benefits">Benefits</a>
+            <a class="nav-link js-scroll-trigger" href="#benefits">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#streamline">Streamlines</a>
+            <a class="nav-link js-scroll-trigger" href="#streamline">Floorplans</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#stories">Our Stories</a>
+            <a class="nav-link js-scroll-trigger" href="#stories">Sunshine North</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#stories">Investor information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#stories">The team</a>
           </li>
         </ul>
       </div>

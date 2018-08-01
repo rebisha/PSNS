@@ -26,10 +26,6 @@ h1 {
 
 /* colors
 ----------------- */
-.text-white {
-  color: $white;
-}
-
 .text-yellow {
   color: $yellow;
 }
@@ -60,4 +56,8 @@ span.logo {
 
 .pt-6 {
   padding-top: 5rem;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
 }

@@ -1,7 +1,7 @@
 <template>
 <section class="mb-5 bg-primary" id="values">
   <div class="col-lg-12 text-center">
-    <img style="margin-top: 3.2rem;" src="./assets/logo1.png">&nbsp;
+    <img style="margin-top: 3.2rem;" src="./assets/media/logo1.png">&nbsp;
     <span class="logo font"> of
     <br>
     Sunshine North </span>
@@ -25,7 +25,7 @@
 
   <div class="row pb-5 pt-5">
     <div class="floorplan-section">
-      <img src="./assets/rect x 580.png">
+      <img src="./assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -37,7 +37,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/rect x 580.png">
+      <img src="./assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/rect x 580.png">
+      <img src="./assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/rect x 580.png">
+      <img src="./assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="row pt-5">
       <div class="col-lg-6">
-        <img src="./assets/rect x 692.png">
+        <img src="./assets/media/rect x 692.png">
       </div>
 
       <div class="col-lg-6 text-white font pt-6">
@@ -100,7 +100,7 @@
       </div>
 
       <div class="col-lg-6">
-        <img src="./assets/rect x 692.png">
+        <img src="./assets/media/rect x 692.png">
       </div>
     </div>
 

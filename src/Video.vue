@@ -19,7 +19,7 @@ export default {
   name: 'app',
   data () {
     return {
-      src: 'src/assets/PSN.mp4',
+      src: 'src/assets/media/PSN.mp4',
       type: 'video/mp4'
     }
   }

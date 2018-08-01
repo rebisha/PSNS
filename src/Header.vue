@@ -1,8 +1,8 @@
 <template>
   <header>
-    <img class="img-fluid" src="./assets/feature-1.jpg">
+    <img class="img-fluid" src="./assets/media/feature-1.jpg">
     <div class="header-logo text-center">
-      <img class="mt-2" src="./assets/logo1.png">&nbsp;
+      <img class="mt-2" src="./assets/media/logo1.png">&nbsp;
       <span class="logo font"> of
       <br><br>
       Sunshine North </span>
