@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import * as VueGoogleMaps from "vue2-google-maps";
 import VueCarousel from 'vue-carousel';
 import {VueMasonryPlugin} from 'vue-masonry';
 import App from './App.vue';
@@ -9,6 +10,7 @@ import GalleryGrid from './GalleryGrid.vue';
 import Video from './Video.vue';
 import Floorplan from './Floorplan.vue';
 import ImageCarousel from './ImageCarousel.vue';
+import MapArea from './MapArea.vue';
 
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
@@ -20,10 +22,17 @@ Vue.component('app-gallery-grid', GalleryGrid);
 Vue.component('app-video', Video);
 Vue.component('app-floorplan', Floorplan);
 Vue.component('app-carousel', ImageCarousel);
+Vue.component('google-map', MapArea);
 
 
 Vue.use(VueMasonryPlugin);
 Vue.use(VueCarousel);
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBtbh2yXA1UdNRm6zYvQ8W99K2C0DaBKK0",
+    libraries: 'places',
+  },
+});
 
 new Vue({
   el: '#app',

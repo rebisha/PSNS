@@ -6,6 +6,7 @@
   <app-gallery-grid></app-gallery-grid>
   <app-video></app-video>
   <app-floorplan></app-floorplan>
+  <google-map name="example"></google-map>
   </div>
 </template>
 

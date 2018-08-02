@@ -112,13 +112,13 @@ body {
 
 #slider {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   position: relative;
 }
 
 .slide {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
   top: 0;
   left: 0;
