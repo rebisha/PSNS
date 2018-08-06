@@ -7,6 +7,7 @@
   <app-video></app-video>
   <app-floorplan></app-floorplan>
   <google-map name="example"></google-map>
+  <app-info></app-info>
   </div>
 </template>
 

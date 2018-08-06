@@ -1,24 +1,15 @@
 <template>
   <div class="container mb-5" id="app">
+    <h4 class="fonts text-center text-white pb-2"> Sunshine North </h4>
     <gmap-map v-bind:center= "center" v-bind:zoom= "14" class="gmap">
 
       <gmap-marker
         v-bind:key= "index"
         v-for="(m, index) in markers"
         v-bind:position= "m.position"
-        v-bind:clickable= "true" >
+        v-bind:clickable= "true" @click= "details()">
       </gmap-marker>
     </gmap-map>
-    <br>
-    <br>
-    <div v-on:click= "markers" v-bind:key= "index" v-for="(m, index) in markers" class="marker-label">
-      <div class="info-content">
-        <img :src= "m.image">
-        <div class="para">
-        <h5> {{ m.title }} </h5>
-        <p>  {{ m.copy }}</p></div>
-    </div>
-    </div>
   </div>
 </template>
 
@@ -119,6 +110,11 @@ export default {
           copy: '322 Duke Street, Sunshine North'
         }
       ]
+    }
+  },
+  methods: {
+    details() {
+      template: '<div v-bind:key= "index" v-for= "(m, index) in markers" v-bind:class= "marker-label"> <div v-bind:class= "info-content"> <img :src= "m.image"> <div v-bind:class= "para"> <h5> {{ this.m.title }} </h5> <p>  {{ this.m.copy }}</p></div></div></div> '
     }
   }
 

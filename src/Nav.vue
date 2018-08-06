@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="col-lg-3">
+    <div class="col-lg-2">
       <a href="#" target="_blank">
         <img class="logo-img" src="./assets/media/logo1.png" width="20%">
         <span class="font"> of Sunshine North </span>
@@ -12,7 +12,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="col-lg-6 text-center">
+    <div class="col-lg-8 text-center">
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -36,8 +36,8 @@
         </ul>
       </div>
     </div>
-    <div class="col-lg-2 bg-yellow">
-      <h4>Enquiry </h4>
+    <div class="offset-lg-1 col-lg-2 bg-yellow enquiry">
+      <h4 class="text-center">Enquiry </h4>
     </div>
   </nav>
 </template>
@@ -61,5 +61,16 @@ span {
 
 .navbar-expand-lg .navbar-collapse {
     display: inline-block !important;
+}
+
+.col-lg-2.enquiry {
+  max-width: 10% !important;
+  border: 10px solid #ffc107;
+}
+
+@media (min-width: 992px){
+  .offset-lg-1.enquiry {
+    margin-left: 7% !important;
+  }
 }
 </style>
