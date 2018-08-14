@@ -29,9 +29,58 @@
   <div class="row pb-5">
     <div class="col-lg-6" style="background-color:#36382b;">
       <p>Future jobs growth</p>
+      <div class="c2016 mt-5 mb-3 animated slideInLeft">
+        <span class="float-left ml-2"> 2016 </span>
+        <span class="float-right mr-2"> 14,600 </span>
+      </div>
+      <div class="c2036 mb-25">
+        <span class="float-left ml-2"> 2036 </span>
+        <span class="float-right mr-2"> 28,400* </span>
+      </div>
+      <div class="row" style="padding-left: 15px;">Source: VPA: Urbis. *Based on VPA Estimate for 2051.</div>
     </div>
+
     <div class="col-lg-6" style="background-color:#36382b;">
       <p>Median rental growth: Sep 2017</p>
+      <div class="row" style="font-size:16px;">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">1yr</div>
+        <div class="col-lg-3">5yr</div>
+        <div class="col-lg-3">10 yr</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="./assets/media/SVG/icon-units.svg" width="50px">
+          <p>Units</p>
+        </div>
+        <div class="col-lg-3">
+          <span>8.4%</span>
+        </div>
+        <div class="col-lg-3">
+          <span>3.6%</span>
+        </div>
+        <div class="col-lg-3">
+          <span>6.2%</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="./assets/media/SVG/icon-house.svg" width="50px">
+          <p>Houses</p>
+        </div>
+        <div class="col-lg-3">
+          <span>3.4%</span>
+        </div>
+        <div class="col-lg-3">
+          <span>2.8%</span>
+        </div>
+        <div class="col-lg-3">
+          <span>5.2%</span>
+        </div>
+      </div>
+      <div class="row" style="padding-left: 45px;">Source: DHS: Urbis</div>
     </div>
   </div>
 </div>
@@ -40,7 +89,20 @@
 <style lang="scss">
 .svg {
   width: 30%;
-      padding-bottom: 15px;
+  padding-bottom: 15px;
+}
+.c2016 {
+  background-color: #52593e;
+  height: 20%;
+  width: 50%;
+}
+.c2036 {
+  background-color: #ffb400;
+  height: 20%;
+  width: 85%;
+}
+.mb-25 {
+  margin-bottom: 2.5rem;
 }
 </style>
 
