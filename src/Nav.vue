@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#values">The project</a>
+            <a class="nav-link js-scroll-trigger" href="app-header">The project</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#benefits">Gallery</a>

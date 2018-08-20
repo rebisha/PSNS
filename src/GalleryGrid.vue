@@ -1,5 +1,5 @@
 <template>
-<section class="grid mt-6" id="Extension1">
+<section class="grid mt-6 mb-5" id="Extension1">
   <div class="grid-item grid-item--width1 grid-item--height1">
     <a href="#"><img src="./assets/media/1.png"></a>
   </div>

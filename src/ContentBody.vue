@@ -8,10 +8,10 @@
     <p class="text-white fonts">Duke Street, Sunshine North</p>
 
     <p class="text-yellow fonts"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    <br>
-    Praesent aliquam, metus luctus tristique suscipit, lectus felis maximus
-    <br>
-    magna, sit amet ultricies felis sapien id purus.
+      <br>
+      Praesent aliquam, metus luctus tristique suscipit, lectus felis maximus
+      <br>
+      magna, sit amet ultricies felis sapien id purus.
     </p>
 
     <p class="text-white fonts"> Display Suite
@@ -19,7 +19,7 @@
     XX Duke Street, Sunshine North </p>
   </div>
 
-  <div class="col-lg-12 text-center">
+  <div class="col-lg-12 text-center mt-5">
     <h4 class="text-white"> Now Selling </h4>
   </div>
 
@@ -73,7 +73,7 @@
     </div>
   </div>
 
-  <div class="col-lg-12 text-center">
+  <div class="col-lg-12 text-center mt-5">
     <h4 class="text-white"> The project </h4>
   </div>
 

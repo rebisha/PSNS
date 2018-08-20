@@ -1,5 +1,5 @@
 <template>
-<section id="floorplan" class="floorplan mb-5">
+<section id="floorplan" class="floorplan mt-6 mb-5">
   <div class="container navbar-nav fonts">
     <div class="input-group-btn">
       <button type="button" class="btn btn-default">Precinct</button>

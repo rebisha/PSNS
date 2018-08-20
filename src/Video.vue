@@ -1,5 +1,5 @@
 <template>
-<section class="mt-6 mb-5" id="app">
+<section class="mt-6 mb-5">
     <div class="container">
       <video controls="1">
         <source v-if="src" :src="src" :type="type">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'app',
+  name: 'videos',
   data () {
     return {
       src: 'src/assets/media/PSN.mp4',

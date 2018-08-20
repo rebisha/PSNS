@@ -1,5 +1,5 @@
 <template>
-<div class="container  text-white text-center fonts">
+<div class="container text-white text-center fonts mt-6">
   <h4> Investor information </h4>
 
   <div class="row pt-5 pb-5">
@@ -27,9 +27,13 @@
   </div>
 
   <div class="row pb-5">
-    <div class="col-lg-6" style="background-color:#36382b;">
+    <div class="col-lg-6 background" style="margin-right: 30px;">
       <p>Future jobs growth</p>
-      <div class="c2016 mt-5 mb-3 animated slideInLeft">
+      <div class="float-right" style="margin-top:10%;">
+      <h2 style="line-height:0.2 !important;">94%</h2>
+      Growth
+      </div>
+      <div class="c2016 mt-5 mb-3">
         <span class="float-left ml-2"> 2016 </span>
         <span class="float-right mr-2"> 14,600 </span>
       </div>
@@ -40,7 +44,7 @@
       <div class="row" style="padding-left: 15px;">Source: VPA: Urbis. *Based on VPA Estimate for 2051.</div>
     </div>
 
-    <div class="col-lg-6" style="background-color:#36382b;">
+    <div class="col-lg-6 background">
       <p>Median rental growth: Sep 2017</p>
       <div class="row" style="font-size:16px;">
         <div class="col-lg-3"></div>
@@ -95,6 +99,7 @@
   background-color: #52593e;
   height: 20%;
   width: 50%;
+  transition: width 500ms;
 }
 .c2036 {
   background-color: #ffb400;
@@ -103,6 +108,9 @@
 }
 .mb-25 {
   margin-bottom: 2.5rem;
+}
+.background {
+  background-color:#36382b;
 }
 </style>
 

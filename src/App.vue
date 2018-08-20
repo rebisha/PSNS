@@ -8,18 +8,19 @@
   <app-floorplan></app-floorplan>
   <google-map name="example"></google-map>
   <app-info></app-info>
+  <app-news></app-news>
+  <app-form></app-form>
+  <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+new Vue({
+  el: "#app",
+  data: {
+    msg: "Welcome to your vue.js app"
   }
-}
+});
 </script>
 
 <style lang="scss">

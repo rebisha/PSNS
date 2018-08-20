@@ -1,5 +1,5 @@
 <template>
-  <div class="container mb-5" id="app">
+  <div class="container mt-6 mb-5" id="app">
     <h4 class="fonts text-center text-white pb-2"> Sunshine North </h4>
     <gmap-map v-bind:center= "center" v-bind:zoom= "14" class="gmap">
 
@@ -7,7 +7,7 @@
         v-bind:key= "index"
         v-for="(m, index) in markers"
         v-bind:position= "m.position"
-        v-bind:clickable= "true" @click= "details()">
+        v-bind:clickable= "true" v-if= "text" @click= "sayHello">
       </gmap-marker>
     </gmap-map>
   </div>
@@ -15,8 +15,10 @@
 
 <script>
 export default {
+  name: 'maps',
   data() {
     return {
+      text: "hi",
       center: {lat: -37.773337, lng: 144.8420937},
       markers: [
         {
@@ -113,11 +115,11 @@ export default {
     }
   },
   methods: {
-    details() {
-      template: '<div v-bind:key= "index" v-for= "(m, index) in markers" v-bind:class= "marker-label"> <div v-bind:class= "info-content"> <img :src= "m.image"> <div v-bind:class= "para"> <h5> {{ this.m.title }} </h5> <p>  {{ this.m.copy }}</p></div></div></div> '
+    sayHello: function() {
+     return alert("hello, " + this.markers[0].title + this.center.lat);
+
     }
   }
-
 }
 </script>
 

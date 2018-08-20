@@ -12,6 +12,9 @@ import Floorplan from './Floorplan.vue';
 import ImageCarousel from './ImageCarousel.vue';
 import MapArea from './MapArea.vue';
 import Info from './Info.vue';
+import News from './News.vue';
+import Form from './Form.vue';
+import Footer from './Footer.vue';
 
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
@@ -25,6 +28,9 @@ Vue.component('app-floorplan', Floorplan);
 Vue.component('app-carousel', ImageCarousel);
 Vue.component('google-map', MapArea);
 Vue.component('app-info', Info);
+Vue.component('app-news', News);
+Vue.component('app-form', Form);
+Vue.component('app-footer', Footer);
 
 Vue.use(VueMasonryPlugin);
 Vue.use(VueCarousel);
