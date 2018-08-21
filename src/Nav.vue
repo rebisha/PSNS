@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="app-header">The project</a>
+           <a class="nav-link js-scroll-trigger" href="">The project</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#benefits">Gallery</a>
@@ -33,12 +33,16 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#stories">The team</a>
           </li>
+          <li class="nav-item">
+            <router-link to="/gallery">Test</router-link>
+          </li>
         </ul>
       </div>
     </div>
     <div class="offset-lg-1 col-lg-2 bg-yellow enquiry">
       <h4 class="text-center">Enquiry </h4>
     </div>
+
   </nav>
 </template>
 

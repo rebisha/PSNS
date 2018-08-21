@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import * as VueGoogleMaps from "vue2-google-maps";
 import VueCarousel from 'vue-carousel';
 import {VueMasonryPlugin} from 'vue-masonry';
@@ -33,6 +34,7 @@ Vue.component('app-form', Form);
 Vue.component('app-footer', Footer);
 
 Vue.use(VueMasonryPlugin);
+Vue.use(VueRouter);
 Vue.use(VueCarousel);
 Vue.use(VueGoogleMaps, {
   load: {
@@ -43,5 +45,19 @@ Vue.use(VueGoogleMaps, {
 
 new Vue({
   el: '#app',
+  router,
   render: h => h(App)
-})
+});
+
+//router link
+export const routes = [
+  { path: '/home', component: Header },
+  { path: '/theProject', component: ContentBody },
+  { path: '/gallery', component: GalleryGrid }
+]
+
+// passing the routes created to the actual VueRouter
+const router = new VueRouter({
+  routes,
+  mode: 'history'
+});

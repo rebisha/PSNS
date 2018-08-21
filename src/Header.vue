@@ -11,7 +11,11 @@
 </template>
 
 <script>
+export default {
+  name: 'header-body'
+}
 </script>
+
 
 <style lang="scss">
 .header-logo {
