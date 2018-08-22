@@ -26,6 +26,9 @@
 </template>
 
 <script>
+export default {
+  name: 'Floorplan'
+}
 </script>
 
 <style lang="scss">

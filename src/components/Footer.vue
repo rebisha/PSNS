@@ -13,7 +13,7 @@
     <div class="footer mt-5 pb-4">
       <div class="container">
         <div class="row">
-          <img class="float-left mt-5 mb-4" src="./assets/media/logo.png">
+          <img class="float-left mt-5 mb-4" src="../assets/media/logo.png">
         </div>
 
         <div class="row">
@@ -55,7 +55,7 @@
 
 <script>
 export default {
-
+  name: 'Footer'
 }
 </script>
 

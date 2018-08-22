@@ -1,24 +1,24 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+import VueScrollTo from 'vue-scrollto';
 import * as VueGoogleMaps from "vue2-google-maps";
 import VueCarousel from 'vue-carousel';
 import {VueMasonryPlugin} from 'vue-masonry';
+import 'bootstrap/dist/js/bootstrap.min';
+
+//importing components
 import App from './App.vue';
-import Nav from './Nav.vue';
-import Header from './Header.vue';
-import ContentBody from './ContentBody.vue';
-import GalleryGrid from './GalleryGrid.vue';
-import Video from './Video.vue';
-import Floorplan from './Floorplan.vue';
-import ImageCarousel from './ImageCarousel.vue';
-import MapArea from './MapArea.vue';
-import Info from './Info.vue';
-import News from './News.vue';
-import Form from './Form.vue';
-import Footer from './Footer.vue';
-
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-
+import Nav from './components/Nav.vue';
+import Header from './components/Header.vue';
+import ContentBody from './components/ContentBody.vue';
+import GalleryGrid from './components/GalleryGrid.vue';
+import Video from './components/Video.vue';
+import Floorplan from './components/Floorplan.vue';
+import ImageCarousel from './components/ImageCarousel.vue';
+import MapArea from './components/MapArea.vue';
+import Info from './components/Info.vue';
+import News from './components/News.vue';
+import Form from './components/Form.vue';
+import Footer from './components/Footer.vue';
 
 Vue.component('app-nav', Nav);
 Vue.component('app-header', Header);
@@ -34,7 +34,18 @@ Vue.component('app-form', Form);
 Vue.component('app-footer', Footer);
 
 Vue.use(VueMasonryPlugin);
-Vue.use(VueRouter);
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 1000,
+  easing: "ease-in",
+  offset: -100,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+});
 Vue.use(VueCarousel);
 Vue.use(VueGoogleMaps, {
   load: {
@@ -45,19 +56,6 @@ Vue.use(VueGoogleMaps, {
 
 new Vue({
   el: '#app',
-  router,
   render: h => h(App)
 });
 
-//router link
-export const routes = [
-  { path: '/home', component: Header },
-  { path: '/theProject', component: ContentBody },
-  { path: '/gallery', component: GalleryGrid }
-]
-
-// passing the routes created to the actual VueRouter
-const router = new VueRouter({
-  routes,
-  mode: 'history'
-});

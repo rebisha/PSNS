@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-6 mb-5" id="app">
+  <div class="container mt-6 mb-5" id="map">
     <h4 class="fonts text-center text-white pb-2"> Sunshine North </h4>
     <gmap-map v-bind:center= "center" v-bind:zoom= "14" class="gmap">
 
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'maps',
+  name: 'Maps',
   data() {
     return {
       text: "hi",

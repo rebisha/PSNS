@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'videos',
+  name: 'Videos',
   data () {
     return {
       src: 'src/assets/media/PSN.mp4',

@@ -1,5 +1,5 @@
 <template>
-<section class="contact mt-6 mb-5 text-white fonts">
+<section class="contact mt-6 mb-5 text-white fonts" id="enquiry">
   <h4 class="text-center"> Enquire about Pace of Sunshine North </h4>
 
   <form class="form">
@@ -57,7 +57,7 @@
 
 <script>
 export default {
-
+  name: 'FormSection'
 }
 </script>
 

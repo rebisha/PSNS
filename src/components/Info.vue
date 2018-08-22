@@ -1,17 +1,17 @@
 <template>
-<div class="container text-white text-center fonts mt-6">
+<div class="container text-white text-center fonts mt-6" id="info">
   <h4> Investor information </h4>
 
   <div class="row pt-5 pb-5">
     <div class="col-lg-4 ">
-      <img class="svg" src="./assets/media/SVG/icon-ring-road.svg" alt="Kiwi standing on oval">
+      <img class="svg" src="../assets/media/SVG/icon-ring-road.svg" alt="Kiwi standing on oval">
       <h5>M80 Ring road upgrade</h5>
       <p>VicRoads' upgrade to the Western Ring Road M80 includes this section which stems from Sunshine Avenue to the Calder Freeway.
         This project includes an extensive widening of both inbound and outbound lanes across EJ.</p>
     </div>
 
     <div class="col-lg-4">
-      <img class="svg" src="./assets/media/SVG/icon-sunshine-skills-hub.svg" alt="Kiwi standing on oval">
+      <img class="svg" src="../assets/media/SVG/icon-sunshine-skills-hub.svg" alt="Kiwi standing on oval">
       <h5>Sunshine skills hub</h5>
       <p>This facility, which will be located on Ballarat Road will introduce a new health and community training centre alongside a state of the art
         gymnasium, innovation hub, cafe, and a bookstore. Being a Victoria University project,
@@ -19,7 +19,7 @@
     </div>
 
     <div class="col-lg-4">
-      <img class="svg" src="./assets/media/SVG/icon-duke-street-shoppong-centre.svg" alt="Kiwi standing on oval">
+      <img class="svg" src="../assets/media/SVG/icon-duke-street-shoppong-centre.svg" alt="Kiwi standing on oval">
       <h5>Duke street shopping centre</h5>
       <p>This proposed shopping centre will include a child care centre, major supermarket and fifteen retail stores facing Duke Street. Creating new localised amenities such as
         this will cater toward the growing proportion of young </p>
@@ -55,7 +55,7 @@
 
       <div class="row">
         <div class="col-lg-3">
-          <img src="./assets/media/SVG/icon-units.svg" width="50px">
+          <img src="../assets/media/SVG/icon-units.svg" width="50px">
           <p>Units</p>
         </div>
         <div class="col-lg-3">
@@ -71,7 +71,7 @@
 
       <div class="row">
         <div class="col-lg-3">
-          <img src="./assets/media/SVG/icon-house.svg" width="50px">
+          <img src="../assets/media/SVG/icon-house.svg" width="50px">
           <p>Houses</p>
         </div>
         <div class="col-lg-3">
@@ -115,5 +115,8 @@
 </style>
 
 <script>
+export default {
+  name: 'Information'
+}
 </script>
 

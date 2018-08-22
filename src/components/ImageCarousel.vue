@@ -22,7 +22,7 @@ export default {
     Carousel,
     Slide
   },
-  name: "slider",
+  name: "Slider",
   data() {
     return {
       current: 0,

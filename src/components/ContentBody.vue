@@ -1,7 +1,7 @@
 <template>
 <section class="mb-5 bg-primary" id="values">
   <div class="col-lg-12 text-center">
-    <img style="margin-top: 3.2rem;" src="./assets/media/logo1.png">&nbsp;
+    <img style="margin-top: 3.2rem;" src="../assets/media/logo1.png">&nbsp;
     <span class="logo font"> of
     <br>
     Sunshine North </span>
@@ -25,7 +25,7 @@
 
   <div class="row pb-5 pt-5">
     <div class="floorplan-section">
-      <img src="./assets/media/rect x 580.png">
+      <img src="../assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -37,7 +37,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/media/rect x 580.png">
+      <img src="../assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/media/rect x 580.png">
+      <img src="../assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="floorplan-section">
-      <img src="./assets/media/rect x 580.png">
+      <img src="../assets/media/rect x 580.png">
       <div class="floorplan-content text-white text-center fonts">
         <h4> 3 Bed, 2 Bath
         <br>
@@ -73,42 +73,46 @@
     </div>
   </div>
 
-  <div class="col-lg-12 text-center mt-5">
-    <h4 class="text-white"> The project </h4>
-  </div>
-
-  <div class="container">
-    <div class="row pt-5">
-      <div class="col-lg-6">
-        <img src="./assets/media/rect x 692.png">
-      </div>
-
-      <div class="col-lg-6 text-white font pt-6">
-        <h1>Lorem ipsum dolor sit amedar.</h1>
-        <br>
-        <p class="fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel placerat sapien. Maecenas et augue quis ante dapibus ornare quis at augue. mauris et enim suscipit, lacinia nibh ut, tempus arcu.
-        Pellentesque id dapibus sapien, sit amet tempus elit. Curabitur id turpis vitae justo euismod faucibus. </p>
-      </div>
+  <div id="project">
+    <div class="col-lg-12 text-center mt-5">
+      <h4 class="text-white"> The project </h4>
     </div>
 
-    <div class="row pt-6">
-      <div class="col-lg-6 text-white font pt-5">
-        <h1>Lorem ipsum dolor sit amedar.</h1>
-        <br>
-        <p class="fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel placerat sapien. Maecenas et augue quis ante dapibus ornare quis at augue. mauris et enim suscipit, lacinia nibh ut, tempus arcu.
-        Pellentesque id dapibus sapien, sit amet tempus elit. Curabitur id turpis vitae justo euismod faucibus. </p>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-lg-6">
+          <img src="../assets/media/rect x 692.png">
+        </div>
+
+        <div class="col-lg-6 text-white font pt-6">
+          <h1>Lorem ipsum dolor sit amedar.</h1>
+          <br>
+          <p class="fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel placerat sapien. Maecenas et augue quis ante dapibus ornare quis at augue. mauris et enim suscipit, lacinia nibh ut, tempus arcu.
+          Pellentesque id dapibus sapien, sit amet tempus elit. Curabitur id turpis vitae justo euismod faucibus. </p>
+        </div>
       </div>
 
-      <div class="col-lg-6">
-        <img src="./assets/media/rect x 692.png">
+      <div class="row pt-6">
+        <div class="col-lg-6 text-white font pt-5">
+          <h1>Lorem ipsum dolor sit amedar.</h1>
+          <br>
+          <p class="fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel placerat sapien. Maecenas et augue quis ante dapibus ornare quis at augue. mauris et enim suscipit, lacinia nibh ut, tempus arcu.
+          Pellentesque id dapibus sapien, sit amet tempus elit. Curabitur id turpis vitae justo euismod faucibus. </p>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="../assets/media/rect x 692.png">
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 </template>
 
 <script>
+export default {
+  name: 'TheProject'
+}
 </script>
 
 <style lang="scss">
