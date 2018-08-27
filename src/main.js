@@ -11,9 +11,8 @@ import Nav from './components/Nav.vue';
 import Header from './components/Header.vue';
 import ContentBody from './components/ContentBody.vue';
 import GalleryGrid from './components/GalleryGrid.vue';
+import FloorplanCarousel from './components/FloorplanCarousel.vue';
 import Video from './components/Video.vue';
-import Floorplan from './components/Floorplan.vue';
-import ImageCarousel from './components/ImageCarousel.vue';
 import MapArea from './components/MapArea.vue';
 import Info from './components/Info.vue';
 import News from './components/News.vue';
@@ -24,9 +23,8 @@ Vue.component('app-nav', Nav);
 Vue.component('app-header', Header);
 Vue.component('app-content-body', ContentBody);
 Vue.component('app-gallery-grid', GalleryGrid);
+Vue.component('floorplan-carousel', FloorplanCarousel);
 Vue.component('app-video', Video);
-Vue.component('app-floorplan', Floorplan);
-Vue.component('app-carousel', ImageCarousel);
 Vue.component('google-map', MapArea);
 Vue.component('app-info', Info);
 Vue.component('app-news', News);
@@ -54,8 +52,11 @@ Vue.use(VueGoogleMaps, {
   },
 });
 
+export const eventBus = new Vue();
+
 new Vue({
   el: '#app',
   render: h => h(App)
 });
+
 

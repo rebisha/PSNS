@@ -2,7 +2,11 @@
 <div id="slider">
   <transition-group tag="div" :name="transitionName" class="slides-group">
     <div v-if="show" :key="current" class="slide" :class="slides[current].className">
-      <p>I'm {{slides[current].className}}!</p>
+      <h4>Type A - {{slides[current].className.split("-").join(" ")}}</h4>
+      <br>
+      <p> More detailed façade information can be provided in the display suite </p>
+      <!-- <h1>Username: {{ name }} <br>
+      age: {{ userAge }}</h1> -->
     </div>
   </transition-group>
   <div class="btn btn-prev" aria-label="Previous slide" @click="slide(-1)">
@@ -11,11 +15,13 @@
   <div class="btn btn-next" aria-label="Next slide" @click="slide(1)">
     &#10095;
   </div>
+
 </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel';
+import { eventBus } from '../../main';
 
 export default {
   components: {
@@ -23,6 +29,9 @@ export default {
     Slide
   },
   name: "Slider",
+
+  props: ['name', 'userAge'],
+
   data() {
     return {
       current: 0,
@@ -30,9 +39,9 @@ export default {
       transitionName: "fade",
       show: false,
       slides: [
-        { className: "blue" },
-        { className: "red" },
-        { className: "yellow" }
+        { className: "Ground-floor" },
+        { className: "First-floor" },
+        { className: "Second-floor" }
       ]
     }
   },
@@ -48,12 +57,27 @@ export default {
   },
   mounted() {
     this.show = true;
+  },
+  created() {
+    eventBus.$on('ageWasEdited', (age) => {
+      this.userAge = age;
+    });
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+
+h4 {
+  position: absolute;
+  top: 50px;
+}
+
+p {
+  position: absolute;
+  bottom: 20px;
+}
 
 /* FADE IN */
 .fade-enter-active {
@@ -89,16 +113,16 @@ export default {
 
 /* SLIDES CLASSES */
 
-.blue {
-  background: #4a69bd;
+.Ground-floor {
+  background-image: url('../../assets/media/floorplan/plan-a-view-1.jpg');
 }
 
-.red {
-  background: #e55039;
+.First-floor {
+  background-image: url('../../assets/media/floorplan/plan-a-view-2.jpg');
 }
 
-.yellow {
-  background: #f6b93b;
+.Second-floor {
+  background-image: url('../../assets/media/floorplan/plan-a-view-3.jpg');
 }
 
 /* SLIDER STYLES */
@@ -114,14 +138,15 @@ body {
   width: 100%;
   height: 60vh;
   position: relative;
+  background-color: #e4e7dc;
 }
 
 .slide {
-  width: 100%;
+  width: 62%;
   height: 60vh;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 23em;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -37,7 +37,7 @@
       </div>
     </div>
       <!-- <h4 class="text-center">Enquiry </h4> -->
-      <button type="submit" class="submit-button" v-scroll-to="'#enquiry'">Enquiry </button>
+      <button type="submit" class="enquire" v-scroll-to="'#enquiry'">Enquiry </button>
 
   </nav>
 </template>
@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 #mainNav {
   background-color: #37392b;
 }
@@ -66,7 +66,7 @@ span {
     display: inline-block !important;
 }
 
-button {
+button.enquire {
   border: none;
   padding: 20px;
   cursor: pointer;

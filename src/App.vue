@@ -5,7 +5,7 @@
   <app-content-body></app-content-body>
   <app-gallery-grid></app-gallery-grid>
   <app-video></app-video>
-  <app-floorplan></app-floorplan>
+  <floorplan-carousel></floorplan-carousel>
   <google-map name="example"></google-map>
   <app-info></app-info>
   <app-news></app-news>
